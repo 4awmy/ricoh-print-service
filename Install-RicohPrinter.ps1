@@ -265,7 +265,7 @@ if ($mode -eq "2" -or $mode -eq "3") {
             } | Select-Object -First 1
 
         if ($pnpRicoh) {
-            # PnP found the device — now match to a USB port by checking the last connected port
+            # PnP found the device - now match to a USB port by checking the last connected port
             $usbPorts = @(Get-PrinterPort | Where-Object { $_.Name -like "USB*" })
             if ($usbPorts.Count -eq 1) {
                 $usbPortName = $usbPorts[0].Name
@@ -302,7 +302,7 @@ if ($mode -eq "2" -or $mode -eq "3") {
             Write-Warn "Make sure the Ricoh is plugged in and powered on, then re-run this script."
             $usbPortName = (Read-Host "  Or enter port name manually (e.g. USB001), press Enter to skip").Trim()
         } elseif ($usbPorts.Count -eq 1) {
-            # Only one USB port — safe to use it automatically
+            # Only one USB port - safe to use it automatically
             $usbPortName = $usbPorts[0].Name
             Write-Warn "Only one USB port found. Using it: $usbPortName"
             Write-Warn "If this is wrong, re-run and enter the correct port manually."
