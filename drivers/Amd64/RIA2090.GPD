@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2003/03/26
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2003 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA2090.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2090 PCL"
+*PrintRatePPM: 90
+*PrintRate: 90
+*PrintRateUnit: PPM
+*Define: RI_90PPM_MODEL
+*Include: "RIA2090X.GPD"

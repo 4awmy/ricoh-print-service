@@ -1,0 +1,15 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2005/02/10
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC3245.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 3245C PCL5c"
+*PrintRatePPM: 45
+*PrintRate: 45
+*PrintRateUnit: PPM
+*Include: "RIAJUC2.GPD"

@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2004/09/07
+*%    Modified: 2004/09/14
+*%
+*%    Copyright (c) 1999 - 2004 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA20756.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2075 PCL6"
+*PrintRatePPM: 75
+*PrintRate: 75
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIAMTC25.GPD"

@@ -1,0 +1,15 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2005/08/12
+*%    Modified: 2005/08/12
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA3030.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 3030 PCL"
+*PrintRatePPM: 30
+*PrintRate: 30
+*PrintRateUnit: PPM
+*Include: "RIARUC4.GPD"

@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2006/01/17
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2006 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA2016.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2016 PCL"
+*PrintRatePPM: 16
+*PrintRate: 16
+*PrintRateUnit: PPM
+*Define: RI_MODEL_C25B
+*Include: "RIAKRC25.GPD"

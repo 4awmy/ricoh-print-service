@@ -1,0 +1,66 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2001/07/12
+*%    Modified: 2001/11/28
+*%
+*%    Copyright (c) 1999 - 2001 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA10156.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 1015 PCL6"
+*PrintRatePPM: 15
+*PrintRate: 15
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIA1018X.GPD"
+
+*%======== Input Tray2 (custom feature) ========
+*Feature: InputTray2
+{
+    *rcNameID: =RC_STR_TRAY2
+    *FeatureType: PRINTER_PROPERTY
+    *DefaultOption: NotInstalled
+    *Option: NotInstalled
+    {
+        *rcNameID: =RC_STR_NOTINSTALLED
+        *Constraints: InputBin.Tray2
+    }
+    *Option: Installed
+    {
+        *rcNameID: =RC_STR_INSTALLED
+    }
+}
+
+*%======== Input Tray3 (custom feature) ========
+*Feature: InputTray3
+{
+    *rcNameID: =RC_STR_TRAY3
+    *FeatureType: PRINTER_PROPERTY
+    *DefaultOption: NotInstalled
+    *Option: NotInstalled
+    {
+        *rcNameID: =RC_STR_NOTINSTALLED
+        *Constraints: InputBin.Tray3
+    }
+    *Option: Installed
+    {
+        *rcNameID: =RC_STR_INSTALLED
+    }
+}
+
+*%======== Input Tray4 (custom feature) ========
+*Feature: InputTray4
+{
+    *rcNameID: =RC_STR_TRAY4
+    *ConcealFromUI?: TRUE
+    *FeatureType: PRINTER_PROPERTY
+    *DefaultOption: NotInstalled
+    *Option: NotInstalled
+    {
+        *rcNameID: =RC_STR_NOTINSTALLED
+        *Constraints: InputBin.Tray4
+    }
+}

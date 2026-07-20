@@ -1,0 +1,20 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2003/04/25
+*%    Modified: 2005/02/08
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIF441N6.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh FAX 4410NF/4420NF PCL6"
+*PrintRatePPM: 15
+*PrintRate: 15
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Define: RI_FAX_MODEL
+*Define: RI_15PPM_MODEL
+*Include: "RIA1013X.GPD"

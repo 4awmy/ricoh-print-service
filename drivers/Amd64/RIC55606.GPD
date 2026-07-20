@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2005/02/10
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC55606.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio Color5560 PCL6"
+*PrintRatePPM: 60
+*PrintRate: 60
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIAVEC1.GPD"

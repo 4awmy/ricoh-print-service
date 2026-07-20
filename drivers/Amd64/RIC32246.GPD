@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2005/04/27
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC32246.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 3224C PCL6"
+*PrintRatePPM: 24
+*PrintRate: 24
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIATHC1.GPD"

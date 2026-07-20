@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2001/07/19
+*%    Modified: 2003/10/24
+*%
+*%    Copyright (c) 1999 - 2001 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA20226.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2022 PCL6"
+*PrintRatePPM: 22
+*PrintRate: 22
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIA2027X.GPD"

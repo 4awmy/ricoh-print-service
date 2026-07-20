@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2002/04/25
+*%    Modified: 2003/10/24
+*%
+*%    Copyright (c) 1999 - 2002 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA235E6.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2035e PCL6"
+*PrintRatePPM: 35
+*PrintRate: 35
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIA2045X.GPD"

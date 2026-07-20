@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2004/05/10
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2002 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC3100.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio CL3100 PCL5c"
+*PrintRatePPM: 22
+*PrintRate: 22
+*PrintRateUnit: PPM
+*Define: RI_MODEL_P1E
+*Include: "RIAARP1E.GPD"

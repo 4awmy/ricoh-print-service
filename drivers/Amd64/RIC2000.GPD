@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2004/05/10
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2002 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC2000.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio CL2000 PCL5c"
+*PrintRatePPM: 16
+*PrintRate: 16
+*PrintRateUnit: PPM
+*Define: RI_MODEL_P1L
+*Include: "RIAARP1E.GPD"

@@ -1,0 +1,18 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2003/07/09
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2003 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIP4006.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio AP400 PCL6"
+*PrintRatePPM: 25
+*PrintRate: 25
+*PrintRateUnit: PPM
+*Ifdef: WINNT_51
+*Define: RI_PCLXL
+*Endif:
+*Include: "RIP400X.GPD"

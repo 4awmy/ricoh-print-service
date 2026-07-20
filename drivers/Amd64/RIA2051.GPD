@@ -1,0 +1,15 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2004/09/07
+*%    Modified: 2004/09/14
+*%
+*%    Copyright (c) 1999 - 2004 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA2051.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio 2051 PCL"
+*PrintRatePPM: 51
+*PrintRate: 51
+*PrintRateUnit: PPM
+*Include: "RIAMTC25.GPD"

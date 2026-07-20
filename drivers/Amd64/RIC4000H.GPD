@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2004/08/17
+*%    Modified: 2004/09/17
+*%
+*%    Copyright (c) 2004 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIC4000H.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio CL4000HDN PCL5c"
+*PrintRatePPM: 25
+*PrintRate: 25
+*PrintRateUnit: PPM
+*Define: RI_MODEL_P1B
+*Include: "RIAGAP1.GPD"

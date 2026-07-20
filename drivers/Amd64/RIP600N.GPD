@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2003/08/04
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2003 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIP600N.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio AP600N PCL"
+*PrintRatePPM: 32
+*PrintRate: 32
+*PrintRateUnit: PPM
+*Define: RI_P3_MODEL
+*Include: "RIAP260X.GPD"

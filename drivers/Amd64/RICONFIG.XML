@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+	<header>
+		<file_name>RICONFIG.xml</file_name>
+		<file_version>1.0</file_version>
+		<file_timestamp>04/20/2008</file_timestamp>
+	</header>
+	<printer>
+		<devicesettings>
+			<!-- ################################################################################## -->
+			<feature>
+				<name>HardDisk</name>
+				<displayname>Hard Disk</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="96"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="110" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="157" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="184" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="199" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="217" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="257" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="272" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="284" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="310" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="357" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="382" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="400" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="422" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="429" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="435" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="473" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="529" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="556" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="629" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="661" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="688" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="708" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="712" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="733" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="813" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="816" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="900" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="928" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="995" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1019" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1195" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Hard Disk</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Memory_HardDisk</name>
+				<displayname>Memory / Hard Disk</displayname>
+				<oidlength>l</oidlength>
+				<oid>.1.3.6.1.2.1.25.2.2.0</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+				</options>
+				<description>This is the Memory / Hard Disk</description>
+			</feature>
+			<!--
+			<feature>
+				<name>Memory</name>
+				<displayname>Memory</displayname>
+				<oidlength>l</oidlength>
+				<oid>.1.3.6.1.2.1.25.2.2.0</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+				</options>
+				<description>This is the Memory</description>
+			</feature>
+			-->
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputTray2</name>
+				<displayname>Tray 2</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 2" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 2</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputTray3</name>
+				<displayname>Tray 3</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 3" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3(LCT)" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 3</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputTray4</name>
+				<displayname>Tray 4</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 4" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 4</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputTray5</name>
+				<displayname>Tray 5</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 5" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 5</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputTray6</name>
+				<displayname>Tray 6</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 6" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 6</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Tray7</name>
+				<displayname>Tray 7</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Tray 7" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 7" optionvalue="True" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Tray 7</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InputBypassTray</name>
+				<displayname>Bypass Tray</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="Bypass Tray" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Bypass Tray" optionvalue="True" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Bypass Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>LargeCapacityTray</name>
+				<displayname>Large Capacity Tray</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="LCT" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="LCT" optionvalue="True" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Large Capacity Tray" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3(LCT)" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3(LCT)" optionvalue="True" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3 (LCT)" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3 (LCT)" optionvalue="True" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Large Capacity Tray" optionvalue="True" displayvalue="Installed" dtype="s"/>
+				</options>
+				<!--
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="XXX" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				-->
+				<description>This is the Large Capacity Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>LARGECAPACITY</name>
+				<displayname>Large Capacity Tray</displayname>
+				<oidlength>10</oidlength>
+				<oid>printmib.prtInput.prtInputTable.prtInputEntry.prtInputName.1.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="LCT" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Large Capacity Tray" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="Tray 3(LCT)" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<!--
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="XXX" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				-->
+				<description>This is the Large Capacity Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>LCTDetail</name>
+				<displayname>Large Capacity Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="365" optionvalue="LCTA4" displayvalue="LCTA4" dtype="s"/>
+					<option mibvalue="638"  optionvalue="LCTMAUI" displayvalue="Large Capacity Tray" dtype="s"/>
+					<option mibvalue="860" optionvalue="LCTA3" displayvalue="LCTA3" dtype="s"/>
+					<option mibvalue="638" optionvalue="LCT" displayvalue="Large Capacity Tray" dtype="s"/>
+					<option mibvalue="1043" optionvalue="WideLCT" displayvalue="Wide Large Capacity Tray" dtype="s"/>
+					<option mibvalue="1043" optionvalue="LCTSIBERIAB" displayvalue="Wide Large Capacity Tray" dtype="s"/>
+					<option mibvalue="1064" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1184" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Large Capacity Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Tray3LCT</name>
+				<displayname>Tray3 (LCT)</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="1063" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1183" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Large Capacity Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Inserter</name>
+				<displayname>Interposer</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="541" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="639" optionvalue="CoverFeeder"  displayvalue="Interposer"  dtype="s"/>
+					<option mibvalue="699" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="883" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1044" optionvalue="TwinInserter"  displayvalue="Twin Interposer"  dtype="s"/>
+				</options>
+				<description>This is the Inseter</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>OptionTray</name>
+				<displayname>Option Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="notinstalled" optionvalue="None"         displayvalue="None"         dtype="s"/>
+					<option mibvalue="143" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="145" optionvalue="1Cassette" displayvalue="Tray 3 (LCT)" dtype="s"/>
+					<option mibvalue="247" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="279" optionvalue="1Cassette" displayvalue="Tray 2" dtype="s"/>
+					<option mibvalue="394" optionvalue="1Cassette" displayvalue="Tray 2" dtype="s"/>
+					<option mibvalue="409" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="431" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="458" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="508" optionvalue="1Cassette" displayvalue="Lower Paper Tray" dtype="s"/>
+					<option mibvalue="567" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="626" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="670" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="672" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="720" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="774" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="806" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="831" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="912" optionvalue="1Cassette" displayvalue="Single Tray" dtype="s"/>
+					<option mibvalue="992" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="1015" optionvalue="1Cassette" displayvalue="Tray 2" dtype="s"/>
+					<option mibvalue="1063" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="1091" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="1183" optionvalue="1Cassette" displayvalue="Tray 3 (LCT)" dtype="s"/>
+					<option mibvalue="1239" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="1269" optionvalue="1Cassette" displayvalue="Tray 3 (LCT)" dtype="s"/>
+					<option mibvalue="144" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="246" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="280" optionvalue="2Cassette" displayvalue="Tray 2 and 3" dtype="s"/>
+					<option mibvalue="395" optionvalue="2Cassette" displayvalue="Tray 2 and 3" dtype="s"/>
+					<option mibvalue="408" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="432" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="459" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="509" optionvalue="2Cassette" displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="627" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="671" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="719" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="773" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="807" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="830" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="886" optionvalue="2Cassette" displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="886" optionvalue="True"      displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="914" optionvalue="2Cassette" displayvalue="Twin Trays" dtype="s"/>
+					<option mibvalue="993" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="1016" optionvalue="2Cassette" displayvalue="Tray 2 and Tray 3" dtype="s"/>
+					<option mibvalue="1029" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="1062" optionvalue="2Cassette" displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="1090" optionvalue="2Cassette" displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="1182" optionvalue="2Cassette" displayvalue="Lower Paper Trays" dtype="s"/>
+					<option mibvalue="1240" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="1268" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="912.914" optionvalue="3Cassette" displayvalue="Single Tray and Twin Trays" dtype="s"/>
+					<option mibvalue="914.912" optionvalue="3Cassette" displayvalue="Single Tray and Twin Trays" dtype="s"/>
+					<option mibvalue="1206" optionvalue="3Cassette" displayvalue="Tray 2, 3 and 4" dtype="s"/>
+					<option mibvalue="915" optionvalue="LCT" displayvalue="Tray 3 (LCT)" dtype="s"/>
+					<option mibvalue="1241" optionvalue="LCT" displayvalue="Tray 3 (LCT)" dtype="s"/>
+					<option mibvalue="970" optionvalue="1Roll" displayvalue="1 Roll Paper Tray" dtype="s"/>
+					<option mibvalue="971" optionvalue="2Roll" displayvalue="2 Roll Paper Tray" dtype="s"/>
+					<option mibvalue="970.972" optionvalue="1RollandCassette" displayvalue="1 Roll Paper Tray and Cut Paper Tray" dtype="s"/>
+					<option mibvalue="972.970" optionvalue="1RollandCassette" displayvalue="1 Roll Paper Tray and Cut Paper Tray" dtype="s"/>
+					<option mibvalue="971.972" optionvalue="2RollandCassette" displayvalue="2 Roll Paper Tray and Cut Paper Tray" dtype="s"/>
+					<option mibvalue="972.971" optionvalue="2RollandCassette" displayvalue="2 Roll Paper Tray and Cut Paper Tray" dtype="s"/>
+					<option mibvalue="1006" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="205" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="335" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="567" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Optional InputTray</description>
+			</feature>
+
+			<feature>
+				<name>Option1</name>
+				<displayname>Option Tray 1</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="143" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="247" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="279" optionvalue="1Cassette" displayvalue="Tray 2" dtype="s"/>
+					<option mibvalue="394" optionvalue="1Cassette" displayvalue="Tray 2" dtype="s"/>
+					<option mibvalue="409" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="431" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="458" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="567" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="626" optionvalue="1Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="670" optionvalue="1Cassette" displayvalue="Tray 3" dtype="s"/>
+					<option mibvalue="720" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="774" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="806" optionvalue="1Cassette" displayvalue="Tray 3(LCT)" dtype="s"/>
+					<option mibvalue="144" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="246" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="280" optionvalue="2Cassette" displayvalue="Tray 2 and 3" dtype="s"/>
+					<option mibvalue="395" optionvalue="2Cassette" displayvalue="Tray 2 and 3" dtype="s"/>
+					<option mibvalue="408" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="432" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="459" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="627" optionvalue="2Cassette" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="671" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="719" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="773" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="807" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="1029" optionvalue="2Cassette" displayvalue="Tray 3 and 4" dtype="s"/>
+					<option mibvalue="205" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="335" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Optional InputTray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>SmallSizePaperTray2</name>
+				<displayname>SmallSizePaper Tray2</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="942" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the SmallSizePaper Tray2</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>SmallSizePaperTray3</name>
+				<displayname>SmallSizePaper Tray3</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="943" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the SmallSizePaper Tray3</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>SmallSizePaperTray4</name>
+				<displayname>SmallSizePaper Tray4</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="944" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the SmallSizePaper Tray4</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>SmallSizePaperTray5</name>
+				<displayname>SmallSizePaper Tray5</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="945" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the SmallSizePaper Tray5</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>ExternalTray</name>
+				<displayname>External Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="138" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="221" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="297" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="339" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="339" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="490" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="490" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="544" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="643" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="748" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the External Tray</description>
+			</feature>
+			
+			<!-- ################################################################################## -->
+			<feature>
+				<name>CopyTray</name>
+				<displayname>Copy Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="643" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Copy Tray</description>
+			</feature>
+			
+			<!-- ################################################################################## -->
+			<feature>
+				<name>LeftTray1and2</name>
+				<displayname>Left Tray 1 and 2</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="264" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="264" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="470" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="470" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="683" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="683" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Left Tray 1 and 2</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InnerTray2</name>
+				<displayname>Inner Tray 2</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="104" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="194" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="251" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="251" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="337" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="337" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="415" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="415" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="489" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="489" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="513" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="513" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="728" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="728" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="729" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="783" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="783" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="839" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="839" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1033" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1072" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1100" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1250" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1278" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Inner Tray 2</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>UpperInternalTray</name>
+				<displayname>Upper Internal Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="1072" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1100" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Upper Internal Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Finisher</name>
+				<displayname>Finisher</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="notinstalled" optionvalue="None"         displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="105" optionvalue="Finisher2250"    displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="106" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="107" optionvalue="FinisherBF10"    displayvalue="Finisher BF10"    dtype="s"/>
+					<option mibvalue="149" optionvalue="Finisher2000"    displayvalue="Finisher 2000"    dtype="s"/>
+					<option mibvalue="149" optionvalue="Finisher2250"    displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="149" optionvalue="Fin2250"         displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="149" optionvalue="Finisher2000"    displayvalue="2 Tray Finisher"  dtype="s"/>
+					<option mibvalue="149" optionvalue="LawrenceB"       displayvalue="2 Tray Finisher"  dtype="s"/>
+					<option mibvalue="182" optionvalue="Installed"       displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="197" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="197" optionvalue="FinisherSR13"    displayvalue="Finisher SR13"    dtype="s"/>
+					<option mibvalue="198" optionvalue="Finisher500"     displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="198" optionvalue="FinisherSR1"     displayvalue="Finisher SR1"     dtype="s"/>
+					<option mibvalue="209" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="209" optionvalue="Installed"       displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="210" optionvalue="Finisher3000"    displayvalue="Finisher 3000"    dtype="s"/>
+					<option mibvalue="210" optionvalue="Finisher3000withPunchUnit" displayvalue="Finisher 3000 with Punch Unit" dtype="s"/>
+					<option mibvalue="210" optionvalue="Installed"       displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="211" optionvalue="Finisher3000"    displayvalue="Finisher 3000"    dtype="s"/>
+					<option mibvalue="211" optionvalue="Installed"       displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="249" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="249" optionvalue="Fin1000"         displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="249" optionvalue="FinisherSR13"    displayvalue="Finisher SR13"    dtype="s"/>
+					<option mibvalue="250" optionvalue="Finisher500"     displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="250" optionvalue="Fin500"          displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="250" optionvalue="FinisherSR2"     displayvalue="Finisher SR2"     dtype="s"/>
+					<option mibvalue="298" optionvalue="ShiftTray"       displayvalue="Shift Tray"       dtype="s"/>
+					<option mibvalue="299" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="299" optionvalue="FinisherSR32V"   displayvalue="Finisher SR32V"   dtype="s"/>
+					<option mibvalue="300" optionvalue="Finisher3000M"   displayvalue="Finisher 3000M"   dtype="s"/>
+					<option mibvalue="300" optionvalue="FinisherSR32"    displayvalue="Finisher SR32"    dtype="s"/>
+					<option mibvalue="301" optionvalue="Finisher3000B"   displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="340" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="340" optionvalue="FinisherSR13"    displayvalue="Finisher SR13"    dtype="s"/>
+					<option mibvalue="340" optionvalue="FinKING"         displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="341" optionvalue="Finisher2250"    displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="341" optionvalue="FinisherSR880"   displayvalue="Finisher SR880"   dtype="s"/>
+					<option mibvalue="341" optionvalue="FinisherSR21"    displayvalue="Finisher SR21"    dtype="s"/>
+					<option mibvalue="341" optionvalue="FinLAWC"         displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="342" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="342" optionvalue="FinisherSR890"   displayvalue="Finisher SR890"   dtype="s"/>
+					<option mibvalue="342" optionvalue="FinisherBF10"    displayvalue="Finisher BF10"    dtype="s"/>
+					<option mibvalue="342" optionvalue="FinTONEC"        displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="369" optionvalue="Finisher3000B"   displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="369" optionvalue="FinisherSF110"   displayvalue="Finisher SF110"   dtype="s"/>
+					<option mibvalue="369" optionvalue="FinVICTO"        displayvalue="Finisher 3000B/3000BZ"   dtype="s"/>
+					<option mibvalue="370" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="370" optionvalue="FinisherSR32V"   displayvalue="Finisher SR32V"   dtype="s"/>
+					<option mibvalue="370" optionvalue="FinZAIRE"        displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="389" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="389" optionvalue="FinisherBF10"    displayvalue="Finisher BF10"    dtype="s"/>
+					<option mibvalue="417" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="417" optionvalue="Fin1000"         displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="417" optionvalue="FinisherSR13"    displayvalue="Finisher SR13"    dtype="s"/>
+					<option mibvalue="417" optionvalue="FinKING"         displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="418" optionvalue="Finisher500"     displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="418" optionvalue="Fin500"          displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="418" optionvalue="FinisherSR1"     displayvalue="Finisher SR1"     dtype="s"/>
+					<option mibvalue="418" optionvalue="FinFUJI"         displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="465" optionvalue="Finisher2000"    displayvalue="Finisher 2000"    dtype="s"/>
+					<option mibvalue="465" optionvalue="Finisher2250"    displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="465" optionvalue="Fin2250"         displayvalue="Finisher 2250"    dtype="s"/>
+					<option mibvalue="471" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="471" optionvalue="FinKINU"         displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="471" optionvalue="FinisherBF12"    displayvalue="Finisher BF12"    dtype="s"/>
+					<option mibvalue="488" optionvalue="FinisherSR21"    displayvalue="Finisher SR21"    dtype="s"/>
+					<option mibvalue="488" optionvalue="True"            displayvalue="Finisher SR21"    dtype="s"/>
+					<option mibvalue="523" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="523" optionvalue="Kinugawa"        displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="545" optionvalue="ShiftTray"       displayvalue="Shift Tray"       dtype="s"/>
+					<option mibvalue="546" optionvalue="BookletFinisher" displayvalue="BookletFinisher"  dtype="s"/>
+					<option mibvalue="546" optionvalue="FinisherSR33V"   displayvalue="Finisher SR33V"   dtype="s"/>
+					<option mibvalue="546" optionvalue="FinMF" displayvalue="Booklet Finisher"  dtype="s"/>
+					<option mibvalue="546" optionvalue="FinZAIRE2"       displayvalue="Finisher SR33V"   dtype="s"/>
+					<option mibvalue="547" optionvalue="FinisherSR33"    displayvalue="Finisher SR33"    dtype="s"/>
+					<option mibvalue="547" optionvalue="Finisher3000M"   displayvalue="Finisher 3000M"   dtype="s"/>
+					<option mibvalue="547" optionvalue="Fin3000M"        displayvalue="Finisher 3000M"   dtype="s"/>
+					<option mibvalue="547" optionvalue="FinZAIRE1"       displayvalue="Finisher SR33"    dtype="s"/>
+					<option mibvalue="548" optionvalue="Finisher3000B"   displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="548" optionvalue="Fin3000B"        displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="644" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="644" optionvalue="FinZAIREZ"       displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="645" optionvalue="FinisherMECBK"   displayvalue="Finisher MEC BK"  dtype="s"/>
+					<option mibvalue="645" optionvalue="FinEUPHPOS"      displayvalue="Finisher MEC BK"  dtype="s"/>
+					<option mibvalue="645" optionvalue="FinisherSR4020"  displayvalue="Finisher SR4020"  dtype="s"/>
+					<option mibvalue="645" optionvalue="FinEUPHRATESCBK" displayvalue="Booklet Finisher SR4020" dtype="s"/>
+					<option mibvalue="646" optionvalue="FinisherMEC"     displayvalue="Finisher MEC"     dtype="s"/>
+					<option mibvalue="646" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher MEC"     dtype="s"/>
+					<option mibvalue="646" optionvalue="FinisherSR4010"  displayvalue="Finisher SR4010"  dtype="s"/>
+					<option mibvalue="646" optionvalue="FinEUPHRATESC"   displayvalue="Finisher SR4010"  dtype="s"/>
+					<option mibvalue="647" optionvalue="Finisher3000B"   displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="647" optionvalue="FinVICTORIA"     displayvalue="Finisher 3000B"   dtype="s"/>
+					<option mibvalue="647" optionvalue="FinisherSR5000"  displayvalue="Finisher SR5000"  dtype="s"/>
+					<option mibvalue="647" optionvalue="FinVICTORIAF"    displayvalue="Finisher SR5000"  dtype="s"/>
+					<option mibvalue="677" optionvalue="Finisher2000"    displayvalue="2 Tray Finisher"  dtype="s"/>
+					<option mibvalue="677" optionvalue="Fin2250"         displayvalue="2 Tray Finisher"  dtype="s"/>
+					<option mibvalue="684" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="684" optionvalue="FinKINU"         displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="684" optionvalue="FinBooklet"      displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="701" optionvalue="Finisher3000BZ"  displayvalue="Finisher 3000BZ"  dtype="s"/>
+					<option mibvalue="701" optionvalue="Fin3000B"        displayvalue="Finisher 3000BZ"  dtype="s"/>
+					<option mibvalue="701" optionvalue="FinisherSF120"   displayvalue="Finisher SR841"   dtype="s"/>
+					<option mibvalue="701" optionvalue="FinVICTORIA"     displayvalue="Finisher SR841"   dtype="s"/>
+					<option mibvalue="726" optionvalue="Finisher1000"    displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="726" optionvalue="Fin1000"         displayvalue="Finisher 1000"    dtype="s"/>
+					<option mibvalue="727" optionvalue="Finisher500"     displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="727" optionvalue="Fin500"          displayvalue="Finisher 500"     dtype="s"/>
+					<option mibvalue="747" optionvalue="BookletFinisher" displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="747" optionvalue="FinMF"           displayvalue="Booklet Finisher" dtype="s"/>
+					<option mibvalue="780" optionvalue="Finisher1000"    displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="780" optionvalue="Fin1000"         displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="781" optionvalue="FinisherSR3000"  displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="781" optionvalue="FinTIGRIS"       displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="781" optionvalue="BookletFinisher" displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="782" optionvalue="FinisherSR3010"  displayvalue="Finisher SR3010"  dtype="s"/>
+					<option mibvalue="782" optionvalue="FinKANOGAWA"     displayvalue="Finisher SR3010"  dtype="s"/>
+					<option mibvalue="782" optionvalue="Fin500"          displayvalue="Finisher SR3010"  dtype="s"/>
+					<option mibvalue="825" optionvalue="FinisherSR40"    displayvalue="Finisher SR40"    dtype="s"/>
+					<option mibvalue="825" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher SR40"    dtype="s"/>
+					<option mibvalue="826" optionvalue="FinisherSR40V"   displayvalue="Finisher SR40V"   dtype="s"/>
+					<option mibvalue="826" optionvalue="FinEUPHPOS"      displayvalue="Finisher SR40V"   dtype="s"/>
+					<option mibvalue="828" optionvalue="FinisherSF120"   displayvalue="Finisher SF120"   dtype="s"/>
+					<option mibvalue="828" optionvalue="FinVICTORIA"     displayvalue="Finisher SF120"   dtype="s"/>
+					<option mibvalue="836" optionvalue="Finisher1000"    displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="836" optionvalue="Fin1000"         displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="837" optionvalue="FinisherSR3030"  displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="837" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="838" optionvalue="FinisherSR3020"  displayvalue="Finisher SR3020"  dtype="s"/>
+					<option mibvalue="838" optionvalue="FinEUPHPOS"      displayvalue="Finisher SR3020"  dtype="s"/>
+					<option mibvalue="861" optionvalue="FinisherAFE"     displayvalue="Finisher AFE"     dtype="s"/>
+					<option mibvalue="861" optionvalue="True"            displayvalue="Finisher AFE"     dtype="s"/>
+					<option mibvalue="890" optionvalue="FinisherSR3040"  displayvalue="Finisher SR3040"  dtype="s"/>
+					<option mibvalue="890" optionvalue="Finisher8100"    displayvalue="Finisher8100"     dtype="s"/>
+					<option mibvalue="890" optionvalue="True"            displayvalue="Installed"        dtype="s"/>
+					<option mibvalue="918" optionvalue="FinisherSR3000"  displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="918" optionvalue="Fin3000"         displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="919" optionvalue="FinisherSR3030"  displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="919" optionvalue="Fin3030"         displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="939" optionvalue="FinisherSR40V"   displayvalue="Finisher SR4000"  dtype="s"/>
+					<option mibvalue="939" optionvalue="FinEUPHPOS"      displayvalue="Finisher SR4000"  dtype="s"/>
+					<option mibvalue="1042" optionvalue="FinisherSR3010"   displayvalue="Finisher SR3010"  dtype="s"/>
+					<option mibvalue="1042" optionvalue="Fin500"           displayvalue="Finisher SR3010"  dtype="s"/>
+					<option mibvalue="1069" optionvalue="FinisherSR790"    displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="1069" optionvalue="FinKING"          displayvalue="Finisher SR790"   dtype="s"/>
+					<option mibvalue="1070" optionvalue="FinisherSR3030"  displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="1070" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="1071" optionvalue="FinisherSR3020"  displayvalue="Finisher SR3020"  dtype="s"/>
+					<option mibvalue="1071" optionvalue="FinEUPHPOS"      displayvalue="Finisher SR3020"  dtype="s"/>
+					<option mibvalue="1097" optionvalue="FinisherSR3050"  displayvalue="Finisher SR3050"  dtype="s"/>
+					<option mibvalue="1097" optionvalue="FinELBE"         displayvalue="Finisher SR3050"  dtype="s"/>
+					<option mibvalue="1098" optionvalue="FinisherSR790"   displayvalue="Finisher SR790"  dtype="s"/>
+					<option mibvalue="1098" optionvalue="FinKING"         displayvalue="Finisher SR790"  dtype="s"/>
+					<option mibvalue="1099" optionvalue="FinisherSR3000"  displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="1099" optionvalue="FinTIGRIS"       displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="1189" optionvalue="FinisherSR3030"  displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="1189" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="1209" optionvalue="FinisherSR790"  displayvalue="Finisher SR790"  dtype="s"/>
+					<option mibvalue="1209" optionvalue="FinKING"        displayvalue="Finisher SR790"  dtype="s"/>
+					<option mibvalue="1248" optionvalue="FinTIGRIS"       displayvalue="Finisher SR3000"  dtype="s"/>
+					<option mibvalue="1249" optionvalue="FinELBE"         displayvalue="Finisher SR3050"  dtype="s"/>
+					<option mibvalue="1275" optionvalue="FinKING"         displayvalue="Finisher SR13"  dtype="s"/>
+					<option mibvalue="1276" optionvalue="FinEUPHIMPOS"    displayvalue="Finisher SR3030"  dtype="s"/>
+					<option mibvalue="1277" optionvalue="FinEUPHPOS"      displayvalue="Finisher SR3020"  dtype="s"/>
+				</options>
+				<description>This is the Finisher</description>
+			</feature>			
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>UpperTray</name>
+				<displayname>Upper Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="94"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="104" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="194" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="195" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="270" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="337" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="398" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="415" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="416" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="489" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="513" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="728" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="783" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="839" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Upper Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>ShiftTray</name>
+				<displayname>Shift Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="94"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="104" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="195" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="252" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="252" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="270" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="398" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="416" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="416" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="545" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="545" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="729" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="729" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="784" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="784" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1101" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1101" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1237" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1237" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1251" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1279" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Shift Tray</description>
+			</feature>
+			
+			<!-- ################################################################################## -->
+			<feature>
+				<name>InternalShiftTray</name>
+				<displayname>Internal Shift Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="1101" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1101" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Internal Shift Tray</description>
+			</feature>
+			
+			<!-- ################################################################################## -->
+			<feature>
+				<name>1binShiftTray</name>
+				<displayname>1 bin Shift Tray</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="94"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="104" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="195" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="252" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="270" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="398" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="416" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the 1 bin Shift Tray</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>Mailbox</name>
+				<displayname>Mail box</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="93"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="108" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="150" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="150" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="181" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="208" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="208" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="269" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="302" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="397" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="549" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="549" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="648" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="648" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="827" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="827" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Mail box</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>PrintPost</name>
+				<displayname>Print Post</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="93"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="108" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="150" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="208" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="269" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="302" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="343" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="397" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="549" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="648" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="827" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="920" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Print Post</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>BookletProcessor</name>
+				<displayname>Booklet Processor</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="notinstalled" optionvalue="None" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="notinstalled" optionvalue="False" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="371" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="371" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="371" optionvalue="Plockmatic" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="566" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="566" optionvalue="Plockmatic" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="595" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="649" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="649" optionvalue="Plockmatic" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="862" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="862" optionvalue="Karun"     displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Booklet Processor</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>BookletFinisher</name>
+				<displayname>Booklet Processor</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="371" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="371" optionvalue="BookletProcessor" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="595" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="649" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="862" optionvalue="FinisherBK5000" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Booklet Processor</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>PunchUnit</name>
+				<displayname>Punch Unit</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="139" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="139" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="139" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="140" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="140" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="141" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="141" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="142" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="142" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="142" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="151" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="151" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="151" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="152" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="152" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="153" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="153" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="154" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="154" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="154" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="212" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="212" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="212" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="223" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="223" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="223" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="224" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="224" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="224" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="225" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="225" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="225" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="225" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="305" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="305" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="305" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="305" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="305" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="306" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="306" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="307" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="307" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="308" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="308" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="308" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="316" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="316" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="316" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="345" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="345" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="345" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="346" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="346" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="347" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="347" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="348" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="348" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="348" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="375" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="375" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="375" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="376" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="376" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="377" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="377" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="378" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="378" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="379" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="379" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="379" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="444" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="444" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="444" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="445" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="445" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="445" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="446" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="446" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="446" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="447" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="447" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="447" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="448" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="448" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="448" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="449" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="449" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="449" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="466" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="466" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="466" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="467" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="467" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="468" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="468" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="469" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="469" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="469" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="491" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="491" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="491" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="537" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="537" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="537" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="538" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="538" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="538" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="552" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="552" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="552" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="553" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="553" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="554" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="554" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="555" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="555" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="555" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="555" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="578" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="578" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="578" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="579" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="579" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="579" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="580" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="580" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="580" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="596" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="596" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="596" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="596" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="596" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="652" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="652" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="652" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="653" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="653" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="654" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="654" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="655" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="655" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="655" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="657" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="657" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="657" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="658" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="658" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="658" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="659" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="659" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="659" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="660" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="660" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="660" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="660" optionvalue="3holes"     displayvalue="3 holes"         dtype="s"/>
+					<option mibvalue="660" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="678" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="678" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="678" optionvalue="2holesJP"   displayvalue="2 holes type JP" dtype="s"/>
+					<option mibvalue="679" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="680" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="680" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="681" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="681" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="681" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="682" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="682" optionvalue="4holes"     displayvalue="4 holes"         dtype="s"/>
+					<option mibvalue="682" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="702" optionvalue="2holes"     displayvalue="2 holes"         dtype="s"/>
+					<option mibvalue="703" optionvalue="1hole"      displayvalue="1 hole"          dtype="s"/>
+					<option mibvalue="749" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="750" optionvalue="2and4holes" displayvalue="2 and 4 holes"   dtype="s"/>
+					<option mibvalue="751" optionvalue="4holesNE"   displayvalue="4 holes type NE" dtype="s"/>
+					<option mibvalue="752" optionvalue="2holesUS"   displayvalue="2 holes type US" dtype="s"/>
+					<option mibvalue="753" optionvalue="3holesUS"   displayvalue="3 holes type US" dtype="s"/>
+					<option mibvalue="754" optionvalue="4holesEU"   displayvalue="4 holes type EU" dtype="s"/>
+					<option mibvalue="755" optionvalue="2and3holes" displayvalue="2 and 3 holes"   dtype="s"/>
+					<option mibvalue="785" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="786" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="787" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="788" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="789" optionvalue="4holesEU"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="790" optionvalue="2holesUS"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="791" optionvalue="3holesUS"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="841" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="842" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="843" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="891" optionvalue="1hole"      displayvalue="1 hole"          dtype="s"/>
+					<option mibvalue="893" optionvalue="2holesUS"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="894" optionvalue="3holesUS"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="895" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="896" optionvalue="4holesEU"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="897" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="898" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="921" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="925" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="926" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="927" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1103" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1104" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1105" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1076" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1074" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1075" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1192" optionvalue="2and3holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1193" optionvalue="2and4holes" displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1194" optionvalue="4holesNE"   displayvalue="Installed"       dtype="s"/>
+				</options>
+				<description>This is the Punch Unit</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>MultiHolePunchUnit</name>
+				<displayname>Multi-hole Punch Unit</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="863"  optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="863"  optionvalue="True"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1047" optionvalue="Installed"  displayvalue="Installed"       dtype="s"/>
+					<option mibvalue="1047" optionvalue="True"       displayvalue="Installed"       dtype="s"/>
+				</options>
+				<description>This is the Multi-hole Punch Unit</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>ZfoldingUnit</name>
+				<displayname>Z-folding Unit</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="565" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="565" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="624" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="656" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="656" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="866" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="866" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Z-folding Unit</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>CopyUnit</name>
+				<displayname>Copy Unit</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="226" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="228" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="464" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="676" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Copy Unit</description>
+			</feature>
+
+			<!-- ################################################################################## -->
+			<feature>
+				<name>DuplexUnit</name>
+				<displayname>Duplex Unit</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="95"  optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="109" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="155" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="155" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="156" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="156" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="183" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="192" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="216" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="262" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="262" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="271" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="282" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="282" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="296" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="358" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="364" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="399" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="399" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="411" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="411" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="434" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="434" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="462" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="463" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="486" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="486" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="510" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="528" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="543" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="570" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="624" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="628" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="642" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="674" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="675" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="700" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="725" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="725" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="812" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="812" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="994" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="994" optionvalue="True"      displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1007" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1017" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+					<option mibvalue="1096" optionvalue="Installed" displayvalue="Installed" dtype="s"/>
+				</options>
+				<description>This is the Duplex Unit</description>
+			</feature>
+			
+			<!-- ################################################################################## -->
+			<feature>
+				<name>OptionFold</name>
+				<displayname>Option Fold</displayname>
+				<oidlength>100</oidlength>
+				<oid>.iso.org.dod.internet.private.enterprises.367.3.2.1.2.11.2.1.2.</oid>
+				<options>
+					<option mibvalue="notinstalled" optionvalue="NotInstalled" displayvalue="Not Installed" dtype="s"/>
+					<option mibvalue="976" optionvalue="FinAtlaA" displayvalue="Bellows Folding Unit" dtype="s"/>
+				</options>
+				<description>This is the Folding Unit</description>
+			</feature>
+		</devicesettings>
+	</printer>
+</devices>
+

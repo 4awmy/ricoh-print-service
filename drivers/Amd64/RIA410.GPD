@@ -1,0 +1,16 @@
+*GPDSpecVersion: "1.0"
+*%
+*%    Created:  2005/02/10
+*%    Modified: 
+*%
+*%    Copyright (c) 1999 - 2005 Ricoh Co., Ltd.
+*%    All rights reserved.
+*%
+*GPDFileName: "RIA410.GPD"
+*Include: "STDNAMES.GPD"
+*ModelName: "Ricoh Aficio AP410 PCL"
+*PrintRatePPM: 28
+*PrintRate: 28
+*PrintRateUnit: PPM
+*Define: RI_MODEL_P2B
+*Include: "RIACAP2.GPD"
