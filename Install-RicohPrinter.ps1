@@ -8,15 +8,13 @@
       - Network printer (TCP/IP port, custom or default IP: 192.168.0.50)
       - USB printer (if a USB Ricoh is connected)
     Compatible: Windows 10 / 11 (64-bit), PowerShell 5.1+
-.AUTHOR
-    Generated for Ricoh Aficio 1515 deployment
 .VERSION
-    1.1  (Windows 10 compliant)
+    1.2 (ASCII-clean, Windows 10 compliant)
 #>
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  CONFIG
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 $DriverName     = "Ricoh Aficio 1515 PCL"
 $DefaultIP      = "192.168.0.50"
 $NetworkPrinter = "Ricoh Aficio 1515 PCL (Network)"
@@ -31,55 +29,55 @@ if ($PSScriptRoot) {
 $DriverFolder = Join-Path $ScriptDir "drivers"
 $InfFile      = Join-Path $DriverFolder "prnrc001.inf"
 
-# ─────────────────────────────────────────────
-#  HELPER: Colored Output
-# ─────────────────────────────────────────────
-function Write-Step { param([string]$msg) Write-Host "`n[STEP] $msg" -ForegroundColor Cyan }
-function Write-OK   { param([string]$msg) Write-Host "  [OK] $msg"   -ForegroundColor Green }
-function Write-Warn { param([string]$msg) Write-Host "  [!!] $msg"   -ForegroundColor Yellow }
-function Write-Fail { param([string]$msg) Write-Host " [ERR] $msg"   -ForegroundColor Red }
+# --------------------------------------------------
+#  HELPERS
+# --------------------------------------------------
+function Write-Step { param([string]$msg) Write-Host "" ; Write-Host "[STEP] $msg" -ForegroundColor Cyan }
+function Write-OK   { param([string]$msg) Write-Host "  [OK] $msg"  -ForegroundColor Green }
+function Write-Warn { param([string]$msg) Write-Host "  [!!] $msg"  -ForegroundColor Yellow }
+function Write-Fail { param([string]$msg) Write-Host " [ERR] $msg"  -ForegroundColor Red }
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  BANNER
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 Clear-Host
 Write-Host ""
 Write-Host "  ============================================================" -ForegroundColor Magenta
-Write-Host "      Ricoh Aficio 1515 PCL - Printer Setup  (v1.1)         " -ForegroundColor Magenta
-Write-Host "      Windows 10/11 Compatible Deployment Script             " -ForegroundColor Magenta
+Write-Host "     Ricoh Aficio 1515 PCL - Printer Setup  (v1.2)          " -ForegroundColor Magenta
+Write-Host "     Windows 10/11 Compatible Deployment Script              " -ForegroundColor Magenta
 Write-Host "  ============================================================" -ForegroundColor Magenta
 Write-Host ""
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  CHECK: Windows 10 or higher
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 Write-Step "Checking OS compatibility..."
 $osVersion = [System.Environment]::OSVersion.Version
-$osBuild   = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").CurrentBuild
 
 if ($osVersion.Major -lt 10) {
     Write-Fail "This script requires Windows 10 or higher."
     Write-Fail "Detected OS version: $($osVersion.ToString())"
-    Read-Host "`nPress Enter to exit"
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
+$osBuild = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").CurrentBuild
 $friendlyName = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ProductName
-Write-OK "OS: $friendlyName (Build $osBuild) — Compatible"
+Write-OK "OS: $friendlyName (Build $osBuild) - Compatible"
 
-# ─────────────────────────────────────────────
-#  CHECK: Architecture (x64 required for these drivers)
-# ─────────────────────────────────────────────
+# --------------------------------------------------
+#  CHECK: 64-bit architecture required
+# --------------------------------------------------
 if ([System.Environment]::Is64BitOperatingSystem -eq $false) {
     Write-Fail "These drivers are 64-bit only. 32-bit Windows is not supported."
-    Read-Host "`nPress Enter to exit"
+    Read-Host "Press Enter to exit"
     exit 1
 }
-Write-OK "Architecture: 64-bit — Compatible"
+Write-OK "Architecture: 64-bit - Compatible"
 
-# ─────────────────────────────────────────────
-#  CHECK: Print Spooler service is running
-# ─────────────────────────────────────────────
+# --------------------------------------------------
+#  CHECK: Print Spooler running
+# --------------------------------------------------
 Write-Step "Checking Print Spooler service..."
 $spooler = Get-Service -Name Spooler -ErrorAction SilentlyContinue
 if (-not $spooler -or $spooler.Status -ne 'Running') {
@@ -89,29 +87,29 @@ if (-not $spooler -or $spooler.Status -ne 'Running') {
         Write-OK "Print Spooler started."
     } catch {
         Write-Fail "Could not start Print Spooler: $($_.Exception.Message)"
-        Write-Fail "Open Services (services.msc) and start 'Print Spooler' manually."
-        Read-Host "`nPress Enter to exit"
+        Write-Fail "Open services.msc and start 'Print Spooler' manually, then re-run this script."
+        Read-Host "Press Enter to exit"
         exit 1
     }
 } else {
     Write-OK "Print Spooler is running."
 }
 
-# ─────────────────────────────────────────────
-#  STEP 0: Check driver files exist
-# ─────────────────────────────────────────────
+# --------------------------------------------------
+#  STEP 0: Verify driver files
+# --------------------------------------------------
 Write-Step "Verifying driver files..."
 if (-not (Test-Path $InfFile)) {
     Write-Fail "Driver INF not found at: $InfFile"
     Write-Fail "Make sure the 'drivers' folder is in the same directory as this script."
-    Read-Host "`nPress Enter to exit"
+    Read-Host "Press Enter to exit"
     exit 1
 }
 Write-OK "Driver files found at: $DriverFolder"
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  STEP 1: Choose setup mode
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 Write-Step "Choose printer setup mode:"
 Write-Host "  [1] Network printer (TCP/IP)  - Ricoh connected via LAN" -ForegroundColor White
 Write-Host "  [2] USB printer               - Ricoh connected via USB cable" -ForegroundColor White
@@ -123,9 +121,9 @@ do {
     $mode = (Read-Host "  Enter choice (1/2/3)").Trim()
 } while ($mode -ne "1" -and $mode -ne "2" -and $mode -ne "3")
 
-# ─────────────────────────────────────────────
-#  STEP 2: Ask for IP (if network mode)
-# ─────────────────────────────────────────────
+# --------------------------------------------------
+#  STEP 2: Ask for IP (network mode only)
+# --------------------------------------------------
 $PrinterIP = $DefaultIP
 if ($mode -eq "1" -or $mode -eq "3") {
     Write-Step "Network printer IP configuration"
@@ -133,7 +131,6 @@ if ($mode -eq "1" -or $mode -eq "3") {
     $customIP = (Read-Host "  Enter custom IP, or press Enter to use default [$DefaultIP]").Trim()
 
     if ($customIP -ne "") {
-        # Validate IP format (compatible with PS 5.1)
         if ($customIP -match '^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$') {
             $PrinterIP = $customIP
             Write-OK "Using IP: $PrinterIP"
@@ -146,19 +143,18 @@ if ($mode -eq "1" -or $mode -eq "3") {
     }
 }
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  STEP 3: Install driver via pnputil
-#  NOTE: pnputil /add-driver is supported on Windows 10+
-#        Add-PrinterDriver -InfPath is NOT reliable on PS 5.1 (Win10)
-#        so we stage via pnputil first, then call Add-PrinterDriver by name only
-# ─────────────────────────────────────────────
+#  pnputil /add-driver is supported on Windows 10+
+#  Add-PrinterDriver -InfPath is unreliable on PS 5.1
+#  so we stage via pnputil first, then register by name only
+# --------------------------------------------------
 Write-Step "Installing Ricoh printer driver..."
 
 $driverInstalled = Get-PrinterDriver -Name $DriverName -ErrorAction SilentlyContinue
 if ($driverInstalled) {
-    Write-Warn "Driver '$DriverName' is already installed. Skipping."
+    Write-Warn "Driver '$DriverName' is already installed. Skipping driver install."
 } else {
-    # Stage the INF into Windows Driver Store using pnputil
     Write-Host "  Staging driver with pnputil (this may take a moment)..." -ForegroundColor White
     $pnpOutput = & pnputil.exe /add-driver "$InfFile" /install 2>&1
     $pnpExit   = $LASTEXITCODE
@@ -167,13 +163,13 @@ if ($driverInstalled) {
     $pnpOutput | ForEach-Object { Write-Host "    $_" -ForegroundColor DarkGray }
 
     if ($pnpExit -eq 0 -or $pnpExit -eq 259) {
-        # 0 = success, 259 = already staged (no reboot needed)
+        # Exit 259 = ERROR_NO_MORE_ITEMS means driver already staged - safe to continue
         Write-OK "Driver staged in Windows Driver Store."
     } else {
-        Write-Warn "pnputil exit code: $pnpExit — will attempt fallback method."
+        Write-Warn "pnputil exit code: $pnpExit - will attempt fallback method."
     }
 
-    # Now add driver to the print subsystem (by name, after pnputil staged it)
+    # Register driver with the Windows print subsystem (by name, after pnputil staged it)
     try {
         Add-PrinterDriver -Name $DriverName -ErrorAction Stop
         Write-OK "Driver '$DriverName' added to print subsystem."
@@ -183,28 +179,27 @@ if ($driverInstalled) {
     }
 }
 
-# Final driver verification
+# Verify driver is now available
 $driverCheck = Get-PrinterDriver -Name $DriverName -ErrorAction SilentlyContinue
 if (-not $driverCheck) {
     Write-Fail "Driver '$DriverName' is still not available after installation."
     Write-Fail "Try running the script again, or install the driver manually from the 'drivers' folder."
-    Read-Host "`nPress Enter to exit"
+    Read-Host "Press Enter to exit"
     exit 1
 }
 Write-OK "Driver verified: '$DriverName'"
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  STEP 4a: Setup Network Printer
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 if ($mode -eq "1" -or $mode -eq "3") {
     Write-Step "Setting up Network Printer at $PrinterIP..."
     $portName = $PrinterIP
 
-    # Create TCP/IP port if it doesn't exist
+    # Create TCP/IP port if it does not already exist
     $existingPort = Get-PrinterPort -Name $portName -ErrorAction SilentlyContinue
     if (-not $existingPort) {
         try {
-            # Add-PrinterPort is available on Windows 10 via PrintManagement module
             Add-PrinterPort -Name $portName -PrinterHostAddress $portName -ErrorAction Stop
             Write-OK "TCP/IP port created: $portName"
         } catch {
@@ -240,13 +235,12 @@ if ($mode -eq "1" -or $mode -eq "3") {
     }
 }
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  STEP 4b: Setup USB Printer
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 if ($mode -eq "2" -or $mode -eq "3") {
     Write-Step "Setting up USB Printer..."
 
-    # Detect available USB printer ports
     $usbPorts    = @(Get-PrinterPort | Where-Object { $_.Name -like "USB*" })
     $usbPortName = ""
 
@@ -261,7 +255,6 @@ if ($mode -eq "2" -or $mode -eq "3") {
     }
 
     if ($usbPortName -ne "") {
-        # Validate the port name exists
         $portExists = Get-PrinterPort -Name $usbPortName -ErrorAction SilentlyContinue
         if (-not $portExists) {
             Write-Warn "Port '$usbPortName' not found. USB printer may not be connected."
@@ -295,12 +288,12 @@ if ($mode -eq "2" -or $mode -eq "3") {
     }
 }
 
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 #  STEP 5: Summary
-# ─────────────────────────────────────────────
+# --------------------------------------------------
 Write-Host ""
 Write-Host "  ============================================================" -ForegroundColor Magenta
-Write-Host "                     Setup Complete!                          " -ForegroundColor Green
+Write-Host "                    Setup Complete!                           " -ForegroundColor Green
 Write-Host "  ============================================================" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "  Installed Ricoh Printers:" -ForegroundColor White
