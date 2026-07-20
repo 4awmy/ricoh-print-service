@@ -2,6 +2,11 @@
 
 > A self-contained, one-click deployment kit for installing the **Ricoh Aficio 1515 PCL** printer driver on any Windows 10/11 (64-bit) machine — supporting both **network (TCP/IP)** and **USB** connections.
 
+> [!IMPORTANT]
+> **Always run `SETUP.bat` — NOT `Install-RicohPrinter.ps1` directly.**
+> Running the `.ps1` file directly will fail with a security error on most Windows machines.
+> `SETUP.bat` handles this automatically.
+
 ---
 
 ## 📋 Table of Contents
@@ -77,10 +82,20 @@ Click the green **Code** button → **Download ZIP** → Extract it.
 ### Step 2 — Run setup
 
 1. Open the extracted folder
-2. **Right-click** `SETUP.bat`
-3. Select **"Run as administrator"**
+2. **Right-click** `SETUP.bat` → **Run as administrator**
 
-> ⚠️ If you double-click without admin rights, the script will warn you and exit safely.
+> [!WARNING]
+> **Do NOT run `Install-RicohPrinter.ps1` directly.** You will get this error:
+> ```
+> cannot be loaded because running scripts is disabled on this system
+> ```
+> Always use `SETUP.bat` — it bypasses this restriction automatically.
+
+> [!TIP]
+> You can also run it from an **Administrator PowerShell** window:
+> ```powershell
+> .\SETUP.bat
+> ```
 
 ---
 
@@ -190,6 +205,7 @@ When using USB, the script lists all detected USB printer ports:
 
 | Problem | Solution |
 |---------|----------|
+| `cannot be loaded because running scripts is disabled` | You ran the `.ps1` directly. **Use `SETUP.bat` instead** — right-click → Run as administrator |
 | `"Run as administrator"` keeps appearing | Right-click `SETUP.bat` → **Run as administrator** |
 | `Driver INF not found` | Make sure `drivers/` folder is in the **same directory** as `SETUP.bat` |
 | `pnputil` fails | Try rebooting, then running setup again |
