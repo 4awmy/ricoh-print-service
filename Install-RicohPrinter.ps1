@@ -241,23 +241,85 @@ if ($mode -eq "1" -or $mode -eq "3") {
 if ($mode -eq "2" -or $mode -eq "3") {
     Write-Step "Setting up USB Printer..."
 
-    $usbPorts    = @(Get-PrinterPort | Where-Object { $_.Name -like "USB*" })
     $usbPortName = ""
 
-    if ($usbPorts.Count -eq 0) {
-        Write-Warn "No USB printer ports detected."
-        Write-Warn "Make sure the Ricoh is plugged in and powered on, then try again."
-        $usbPortName = (Read-Host "  Or enter USB port name manually (e.g. USB001), press Enter to skip").Trim()
-    } else {
-        Write-Host "  Detected USB ports:" -ForegroundColor White
-        $usbPorts | ForEach-Object { Write-Host "    - $($_.Name)" -ForegroundColor White }
-        $usbPortName = (Read-Host "  Enter USB port name to use (e.g. USB001)").Trim()
+    # -- Auto-detect: Method 1 --
+    # Check if a Ricoh printer is already registered on a USB port via WMI
+    Write-Host "  Scanning for Ricoh USB device..." -ForegroundColor White
+    $wmiRicoh = Get-WmiObject Win32_Printer -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -like "*Ricoh*" -and $_.PortName -like "USB*" } |
+        Select-Object -First 1
+
+    if ($wmiRicoh) {
+        $usbPortName = $wmiRicoh.PortName
+        Write-OK "Auto-detected Ricoh on port: $usbPortName (from '$($wmiRicoh.Name)')"
     }
 
+    # -- Auto-detect: Method 2 --
+    # Scan PnP devices for a Ricoh USB printer entry
+    if ($usbPortName -eq "") {
+        $pnpRicoh = Get-PnpDevice -ErrorAction SilentlyContinue |
+            Where-Object {
+                ($_.FriendlyName -like "*Ricoh*" -or $_.FriendlyName -like "*1515*") -and
+                $_.InstanceId -like "USB\*"
+            } | Select-Object -First 1
+
+        if ($pnpRicoh) {
+            # PnP found the device — now match to a USB port by checking the last connected port
+            $usbPorts = @(Get-PrinterPort | Where-Object { $_.Name -like "USB*" })
+            if ($usbPorts.Count -eq 1) {
+                $usbPortName = $usbPorts[0].Name
+                Write-OK "Auto-detected via PnP: $usbPortName (Ricoh USB device found, only 1 USB port active)"
+            } else {
+                Write-Warn "Ricoh USB device found via PnP but multiple USB ports exist."
+                Write-Host "  PnP device: $($pnpRicoh.FriendlyName)" -ForegroundColor White
+            }
+        }
+    }
+
+    # -- Auto-detect: Method 3 --
+    # Check registry USB Monitor for port-to-description mappings
+    if ($usbPortName -eq "") {
+        $regBase = "HKLM:\SYSTEM\CurrentControlSet\Control\Print\Monitors\USB Monitor\Ports"
+        if (Test-Path $regBase) {
+            Get-ChildItem $regBase -ErrorAction SilentlyContinue | ForEach-Object {
+                $desc = (Get-ItemProperty $_.PSPath -ErrorAction SilentlyContinue).Description
+                if ($desc -like "*Ricoh*" -or $desc -like "*1515*") {
+                    $usbPortName = $_.PSChildName
+                    Write-OK "Auto-detected via Registry: $usbPortName (Description: $desc)"
+                }
+            }
+        }
+    }
+
+    # -- Fallback: manual selection --
+    if ($usbPortName -eq "") {
+        Write-Warn "Could not auto-detect the Ricoh USB port."
+        $usbPorts = @(Get-PrinterPort | Where-Object { $_.Name -like "USB*" })
+
+        if ($usbPorts.Count -eq 0) {
+            Write-Warn "No USB printer ports found at all."
+            Write-Warn "Make sure the Ricoh is plugged in and powered on, then re-run this script."
+            $usbPortName = (Read-Host "  Or enter port name manually (e.g. USB001), press Enter to skip").Trim()
+        } elseif ($usbPorts.Count -eq 1) {
+            # Only one USB port — safe to use it automatically
+            $usbPortName = $usbPorts[0].Name
+            Write-Warn "Only one USB port found. Using it: $usbPortName"
+            Write-Warn "If this is wrong, re-run and enter the correct port manually."
+        } else {
+            Write-Host ""
+            Write-Host "  Available USB printer ports:" -ForegroundColor White
+            $usbPorts | ForEach-Object { Write-Host "    - $($_.Name)" -ForegroundColor White }
+            Write-Host "  Tip: The Ricoh is usually on the highest-numbered USB port (e.g. USB009)." -ForegroundColor DarkGray
+            $usbPortName = (Read-Host "  Enter USB port name to use").Trim()
+        }
+    }
+
+    # -- Install --
     if ($usbPortName -ne "") {
         $portExists = Get-PrinterPort -Name $usbPortName -ErrorAction SilentlyContinue
         if (-not $portExists) {
-            Write-Warn "Port '$usbPortName' not found. USB printer may not be connected."
+            Write-Warn "Port '$usbPortName' not found in port list. USB printer may not be connected."
         }
 
         $existingUSBPrinter = Get-Printer -Name $USBPrinter -ErrorAction SilentlyContinue
@@ -278,7 +340,7 @@ if ($mode -eq "2" -or $mode -eq "3") {
         if ($installUSB) {
             try {
                 Add-Printer -Name $USBPrinter -DriverName $DriverName -PortName $usbPortName -ErrorAction Stop
-                Write-OK "USB printer added: '$USBPrinter'"
+                Write-OK "USB printer added: '$USBPrinter' on port $usbPortName"
             } catch {
                 Write-Fail "Failed to add USB printer: $($_.Exception.Message)"
             }
